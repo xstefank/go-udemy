@@ -1,7 +1,8 @@
 package main
 
-func main() {
-	cards := newDeck()
+import "fmt"
 
-	cards.print()
+func main() {
+	cards := newDeckFromFile("my_cards")
+	fmt.Println(cards)
 }
